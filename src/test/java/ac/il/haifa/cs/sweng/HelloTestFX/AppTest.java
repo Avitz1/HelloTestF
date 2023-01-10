@@ -27,8 +27,8 @@ public class AppTest {
 	@Start
 	private void start(Stage stage) throws IOException {
 		Scene scene = new Scene(loadFXML("primary"), 640, 480);
-        stage.setScene(scene);
-        stage.show();
+		stage.setScene(scene);
+		stage.show();
 	}
 	
 	@Test
@@ -43,7 +43,7 @@ public class AppTest {
 	
 	@Test
 	void test_button_click(FxRobot robot) {
-		robot.clickOn(".button");
+		robot.clickOn("#sayHello");
 		
 		FxAssert.verifyThat("#textField", TextInputControlMatchers.hasText("Hello World"));
 	}

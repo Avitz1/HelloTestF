@@ -4,24 +4,19 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
 public class PrimaryController {
 
     @FXML
-    private ResourceBundle resources;
-
-    @FXML
-    private URL location;
+    private Button sayHello;
 
     @FXML
     private TextField textField;
 
     @FXML
     void sayHello(ActionEvent event) {
-    }
-
-    @FXML
-    void initialize() {
+        	textField.setText("Hello World");
     }
 }
